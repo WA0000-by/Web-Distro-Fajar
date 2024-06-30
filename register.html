@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi - Distro Fajar</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="validasi.js"></script>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h1>Registrasi</h1>
+            <nav>
+                <a href="index.html">Beranda</a> 
+            </nav>
+        </header>
+        <section class="content">
+            <h2>Buat Akun Baru</h2>
+            <form action="simpan.php" method="post" class="form-registrasi"onsubmit="return validatePassword()">
+                <SCRIPT language=“Javascript” src=“validasi.js”></SCRIPT>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required><br>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+            
+                </div>
+                <div class="form-group">
+                    <label for="nomor_telepon">Nomor Telepon:</label><br>
+                    <input type="tel" id="nomor_telepon" name="nomor_telepon" required><br>
+                </div>
+                <div class="form-group">
+                   
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" required></textarea><br>
+
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br>
+            
+                </div>
+                <div class="form-group">
+                    <label for="konfirmasi_password">Konfirmasi Password:</label><br>
+                    <input type="password" id="konfirmasi_password" name="konfirmasi_password" required><br>
+                </div>
+                <input type="submit" class="btn" value="Registrasi">
+               
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Grosir Haki. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<style>
+    body {
+      background-image: url('https://th.bing.com/th/id/OIP.BQq80ECtp333VonFiejMIwHaEK?w=271&h=180&c=7&r=0&o=5&pid=1.7');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  background-size: cover;
+    }
+    </style>
+</html>
